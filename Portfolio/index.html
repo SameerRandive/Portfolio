@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d18949089e.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3 class=" logo">SAMEER </h3>
+                <ul>
+                    <li> <a href="#"> Home</a></li>
+                    <li> <a href="#"> About</a></li>
+                    
+                    <li><a href="#">Work</a></li>
+                    <li> <a href="#"> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+            <p> Java Full Stack Developer</p>
+            <h1>Hi, I'm  <span>Sameer </span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <img src="image/pexels-pixabay-220453.jpg" width="50%" height="50%">
+                </div>
+                <div class="col2">
+                    <h1 class="sub-title"> About me</h1>
+                     <p>A Java Full Stack Developer is a professional proficient in both front-end and back-end development using Java and related technologies. They possess expertise in designing user interfaces, developing responsive web applications, implementing business logic, integrating APIs, managing databases, and ensuring system security. They work with frameworks like Spring Boot, Hibernate, and AngularJS to create scalable and efficient software solutions. They also possess strong problem-solving skills, collaborate with teams, and stay updated with industry trends to deliver innovative and high-performance applications.</p>
+                     <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links  " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links  " onclick="opentab('education')">Education</p>
+                        
+                        
+                    </div>
+                    <div class="tab-contents  active-tab" id="skiils">
+                        <ul>
+                        <li><span>Core Java</span> <br> </li>
+                        <li><span>BootStrap</span> <br</li>
+                        <li><span>MySql</span> <br> </li>
+                        <li><span>HTML & CSS</span> <br></li> 
+                       </ul>                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Inter </span> <br> At Asterisc Pvt Ltd</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Computer University</span> <br> (Kamla Nehru College)</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!---Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-titlle">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>con@gmail.com</p>
+                <p><i class="fa-solid fa-paper-plane"></i>12345678</p>
+                <div class="social-icon">
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                </div>
+                <br>
+                <a href="" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right"></div>
+                 <form action="#">
+                    <input type="text" placeholder="name" name="name" >
+                    <input type="email" placeholder="email" name="email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontent=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablinks of tablinks)
+            {
+                tablinks.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontent)
+            {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabnme).classList.add("active-tab")
+        }
+    </script>
+</body>
+</html>
